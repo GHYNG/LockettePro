@@ -38,6 +38,7 @@ public class LockettePro extends JavaPlugin {
 		getServer().getPluginManager().registerEvents(new BlockPlayerListener(), this);
 		getServer().getPluginManager().registerEvents(new BlockEnvironmentListener(), this);
 		getServer().getPluginManager().registerEvents(new BlockInventoryMoveListener(), this);
+		getServer().getPluginManager().registerEvents(new ItemFrameListener(), this);
 		// Dependency
 		new Dependency(this);
 		// If UUID is not enabled, UUID listener won't register

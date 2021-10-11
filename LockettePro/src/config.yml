@@ -32,11 +32,19 @@ timer-signs:
 - '[timer:@]'
 
 # Milkyway special configs.
+
 # For locked inventories:
 # This will allow hopper interaction with this locked inventory.
 allow-hopper-signs:
 - '[Hopper]'
 - '[hopper]'
+
+# For wall locks
+using-wall-locks: true
+wall-lock-signs:
+- '[Wall Lock]'
+- '[Wall lock]'
+- '[wall lock]'
 
 # material name see: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
 # legacy block name and block id are not supported!

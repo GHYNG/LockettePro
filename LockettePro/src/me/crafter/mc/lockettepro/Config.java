@@ -22,6 +22,7 @@ public class Config {
 	private static Set<String> additionalstrings = new HashSet<String>();
 	private static Set<String> everyonestrings = new HashSet<String>();
 	private static Set<String> allowhopperstrings = new HashSet<String>();
+	private static Set<String> walllockstrings = new HashSet<String>();
 	private static Set<String> timerstrings = new HashSet<String>();
 	private static String defaultprivatestring = "[Private]";
 	private static String defaultadditionalstring = "[More Users]";
@@ -76,11 +77,13 @@ public class Config {
 		List<String> additionalstringlist = config.getStringList("additional-signs");
 		List<String> everyonestringlist = config.getStringList("everyone-signs");
 		List<String> allowhopperstringlist = config.getStringList("allow-hopper-signs");
+		List<String> walllockstringlist = config.getStringList("wall-lock-signs");
 		List<String> protectionexemptstringlist = config.getStringList("protection-exempt");
 		privatestrings = new HashSet<String>(privatestringlist);
 		additionalstrings = new HashSet<String>(additionalstringlist);
 		everyonestrings = new HashSet<String>(everyonestringlist);
 		allowhopperstrings = new HashSet<String>(allowhopperstringlist);
+		walllockstrings = new HashSet<String>(walllockstringlist);
 		protectionexempt = new HashSet<String>(protectionexemptstringlist);
 		defaultprivatestring = privatestringlist.get(0);
 		defaultadditionalstring = additionalstringlist.get(0);
@@ -219,7 +222,7 @@ public class Config {
 		return lockexpirestring;
 	}
 	public static String getLang(String path) {
-		return ChatColor.translateAlternateColorCodes('&', lang.getString(path, ""));
+		return ChatColor.translateAlternateColorCodes('&', lang.getString(path, path));
 	}
 	public static boolean isUuidEnabled() {
 		return uuid;
@@ -238,6 +241,9 @@ public class Config {
 	}
 	public static boolean isAllowHopperSignString(String message) {
 		return allowhopperstrings.contains(message);
+	}
+	public static boolean isWallLockString(String message) {
+		return walllockstrings.contains(message);
 	}
 	public static boolean isTimerSignString(String message) {
 		for(String timerstring : timerstrings) {
