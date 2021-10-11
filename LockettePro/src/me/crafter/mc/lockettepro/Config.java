@@ -21,6 +21,7 @@ public class Config {
 	private static Set<String> privatestrings = new HashSet<String>();
 	private static Set<String> additionalstrings = new HashSet<String>();
 	private static Set<String> everyonestrings = new HashSet<String>();
+	private static Set<String> allowhopperstrings = new HashSet<String>();
 	private static Set<String> timerstrings = new HashSet<String>();
 	private static String defaultprivatestring = "[Private]";
 	private static String defaultadditionalstring = "[More Users]";
@@ -74,10 +75,12 @@ public class Config {
 		List<String> privatestringlist = config.getStringList("private-signs");
 		List<String> additionalstringlist = config.getStringList("additional-signs");
 		List<String> everyonestringlist = config.getStringList("everyone-signs");
+		List<String> allowhopperstringlist = config.getStringList("allow-hopper-signs");
 		List<String> protectionexemptstringlist = config.getStringList("protection-exempt");
 		privatestrings = new HashSet<String>(privatestringlist);
 		additionalstrings = new HashSet<String>(additionalstringlist);
 		everyonestrings = new HashSet<String>(everyonestringlist);
+		allowhopperstrings = new HashSet<String>(allowhopperstringlist);
 		protectionexempt = new HashSet<String>(protectionexemptstringlist);
 		defaultprivatestring = privatestringlist.get(0);
 		defaultadditionalstring = additionalstringlist.get(0);
@@ -232,6 +235,9 @@ public class Config {
 	}
 	public static boolean isEveryoneSignString(String message) {
 		return everyonestrings.contains(message);
+	}
+	public static boolean isAllowHopperSignString(String message) {
+		return allowhopperstrings.contains(message);
 	}
 	public static boolean isTimerSignString(String message) {
 		for(String timerstring : timerstrings) {

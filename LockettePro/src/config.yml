@@ -30,6 +30,14 @@ everyone-signs:
 timer-signs:
 - '[Timer:@]'
 - '[timer:@]'
+
+# Milkyway special configs.
+# For locked inventories:
+# This will allow hopper interaction with this locked inventory.
+allow-hopper-signs:
+- '[Hopper]'
+- '[hopper]'
+
 # material name see: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
 # legacy block name and block id are not supported!
 lockables:
