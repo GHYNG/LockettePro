@@ -226,8 +226,7 @@ public class Utils {
 			String rawuuid = json.get("id").getAsString();
 			return rawuuid.substring(0, 8) + "-" + rawuuid.substring(8, 12) + "-" + rawuuid.substring(12, 16) + "-" + rawuuid.substring(16, 20) + "-" + rawuuid.substring(20);
 		}
-		catch(Exception ex) {
-		}
+		catch(Exception ex) {}
 		return null;
 	}
 	public static boolean isUsernameUuidLine(String text) {

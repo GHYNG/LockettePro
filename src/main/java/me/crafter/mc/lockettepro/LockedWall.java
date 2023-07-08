@@ -5,6 +5,12 @@ import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.World;
 import org.bukkit.block.Block;
+/*
+ * Unfinished.
+ */
+/**
+ * @author GHYNG
+ */
 public class LockedWall {
 	public final Material material;
 	public final World world;

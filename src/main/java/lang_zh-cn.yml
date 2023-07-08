@@ -30,3 +30,4 @@ cannot-break-this-additional-sign: '&6[LockettePro] &c你不可以拆掉别人�
 block-is-locked: '&6[LockettePro] &c这个方块已上锁。'
 cannot-interfere-with-others: '&6[LockettePro] &c你不能在已上锁的方块附近放这个。'
 sign-error: '&4[ERROR]'
+cannot-edit-others-sign: '&c你不能编辑他人的用户牌子。'

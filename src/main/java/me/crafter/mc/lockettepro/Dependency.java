@@ -59,8 +59,7 @@ public class Dependency {
 					if(line.equals("[" + group + "]")) return true;
 				}
 			}
-			catch(Exception e) {
-			}
+			catch(Exception e) {}
 		}
 		return false;
 	}

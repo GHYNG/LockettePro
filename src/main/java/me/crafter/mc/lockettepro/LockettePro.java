@@ -39,6 +39,7 @@ public class LockettePro extends JavaPlugin {
 		getServer().getPluginManager().registerEvents(new BlockEnvironmentListener(), this);
 		getServer().getPluginManager().registerEvents(new BlockInventoryMoveListener(), this);
 		getServer().getPluginManager().registerEvents(new ItemFrameListener(), this);
+		getServer().getPluginManager().registerEvents(new SignEditingListener(), this);
 		// Dependency
 		new Dependency(this);
 		// If UUID is not enabled, UUID listener won't register
@@ -281,5 +282,8 @@ public class LockettePro extends JavaPlugin {
 			}
 		}
 		return true;
+	}
+	public static void main(String[] args) {
+		System.out.println("this is for test only!");
 	}
 }
