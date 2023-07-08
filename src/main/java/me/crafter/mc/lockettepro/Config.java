@@ -263,8 +263,7 @@ public class Config {
 					int seconds = Integer.parseInt(newmessage);
 					return Math.min(seconds, 20);
 				}
-				catch(Exception ex) {
-				}
+				catch(Exception ex) {}
 			}
 		}
 		return 0;

@@ -1,8 +1,8 @@
 # LockettePro
 ### LockettePro - A much better Lockette plugin for Bukkit
 
-This fork is a continuation of the origial plugin: https://github.com/connection-lost/LockettePro  
-Also contains updates from: https://github.com/NyaaCat/LockettePro  
+This variation of LockettePro is a fork of [brunyman's version](https://github.com/brunyman/LockettePro/tree/master),
+which is a fork of [connection_lost's version](https://github.com/connection-lost/LockettePro).
 
 LockettePro is a block-protection plugin based on Lockette (https://github.com/Acru/Lockette), the code base is entirely re-written. It is 100% compatable with original Lockette, and the plugin behaviors are also 100% same.
 
@@ -11,12 +11,11 @@ LockettePro is a block-protection plugin based on Lockette (https://github.com/A
 1. Much better codebase and performance, fixed a lot of issues and glitches.
 2. Real UUID support.
 3. All blocks can be set to lockable or not. You can even prevent players from locking a chest.
-4. Unlimited [Private], [More Users], [Timer:x] signs format.
+4. Unlimited `[Private]`, `[More Users]`, `[Timer:x]` signs format.
 5. Alert messages are editable, and UTF-8 characters are supported.
 6. Lock expircy feature, locks can expire after a certain amount of time.
 
-### Links
-Spigot release page: https://www.spigotmc.org/resources/lockettepro-for-1-14-1-15-1-16.74354/  
-Bukkit release page: http://dev.bukkit.org/bukkit-plugins/lockettepro/  
-MCBBS release page: http://www.mcbbs.net/thread-567962-1-1.html    
-MC 1.6~1.7 Port: https://github.com/connection-lost/LockettePro/releases/tag/v1.9.4
+### MW Variation
+
+1. Sign line `[Hopper]` allows inventories to interact with hopper system.
+2. Sign editing view won't break locked signs for game version 1.20.
