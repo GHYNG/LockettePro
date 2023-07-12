@@ -37,13 +37,5 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Personal Data/My Files/Eclipse Output/Vault.jar"/>
-	<classpathentry kind="lib" path="C:/Personal Data/My Files/Eclipse Output/worldguard-bukkit-7.0.5-dist.jar"/>
-	<classpathentry kind="lib" path="//HG-COMPUTER-3/Minecraft Server/Dependencies/ChestShop.jar"/>
-	<classpathentry kind="lib" path="//HG-COMPUTER-3/Minecraft Server/Dependencies/CoreProtect-19.5.jar"/>
-	<classpathentry kind="lib" path="//HG-COMPUTER-3/Minecraft Server/Dependencies/ProtocolLib.jar"/>
-	<classpathentry kind="lib" path="//HG-COMPUTER-3/Minecraft Server/Dependencies/spigot-1.16.5.jar"/>
-	<classpathentry kind="lib" path="//HG-COMPUTER-3/Minecraft Server/Dependencies/Vault.jar"/>
-	<classpathentry kind="lib" path="//HG-COMPUTER-3/Minecraft Server/Dependencies/worldguard-bukkit-7.0.5-dist.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
